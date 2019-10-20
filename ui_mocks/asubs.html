@@ -60,7 +60,7 @@
                 <a class="nav-link" href="donationhistory.html">Donation History</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Past Campaigns</a>
+                <a class="nav-link" href="pastcampaigns.html">Past Campaigns</a>
             </li>
 			
 			<li class="nav-item">
@@ -77,6 +77,63 @@
 		<div class="col-md-9">
 			<div class="row">
 				<div class="col-md-6">
+				<div class="modal fade" id="modal-container-444208" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="myModalLabel">
+										Breast Cancer Institute
+									</h5> 
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">×</span>
+									</button>
+								</div>
+								<div class="modal-body">
+						
+									<label for="usr">Edit Monthly Subscription Amount (€):</label>
+									<input type="text" class="form-control" id="usr">
+								</div>
+								<div class="modal-footer">
+									 
+									<button type="button" class="btn btn-primary">
+										Save
+									</button> 
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">
+										Close
+									</button>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="modal fade" id="yousure" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="myModalLabel">
+										Cancel subscription?
+									</h5> 
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">×</span>
+									</button>
+								</div>
+								<div class="modal-body">
+						
+									<p> You can resubscribe any time if you cancel.</p>
+								</div>
+								<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">
+										Yes
+									</button>
+									<button type="button" class="btn btn-primary" data-dismiss="modal">
+										No
+									</button> 
+
+								</div>
+							</div>
+							
+						</div>
+					</div>
 					<div class="card" align="center">
 						<h5 class="card-header">
 							Local Animal Shelter
@@ -107,8 +164,8 @@
 							</p>
 						</div>
 						<div class="card-footer">
-							<button type="button" class="btn btn-primary">View / Edit</button>
-							<button type="button" class="btn btn-danger">End Subscription</button>
+							<button type="button" class="btn btn-primary" href="#modal-container-444208" data-toggle="modal">View / Edit</button>
+							<button type="button" class="btn btn-danger" href="#yousure" data-toggle="modal">End Subscription</button>
 						</div>
 					</div>
 				</div>
@@ -119,7 +176,8 @@
 			<br>
 			<div><center><h5>Total Donations: €100</h5>
 			<h5>Last Donation: 19/10/2019 (€15)</h5>
-			<h5>Active Subscriptions: 3</h5></center></div>
+			<h5>Active Subscriptions: 2</h5>
+			<button type="button" class="btn btn-success">Create Campaign</button></center></div>
 		</div>
 	</div>
 </div>

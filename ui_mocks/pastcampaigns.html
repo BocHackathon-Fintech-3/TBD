@@ -7,14 +7,6 @@
 </head>
 <!-- Navigation -->
 <body>
-<script>
-function success() { 
-//document.getElementById("modal-container-444208").hideModal(); 
-  //document.getElementById("successmodal").showModal(); 
-  $('#modal-container-444208').modal('toggle');
-  $('#successmodal').modal('show');
-} 
-</script>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
 
   <div class="container">
@@ -54,21 +46,21 @@ function success() {
 <hr>
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <div class="d-flex w-50 order-0">
-        <a class="navbar-brand mr-1" href="#">Dashboard</a>
+        <a class="navbar-brand mr-1" href="donations.html">Dashboard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
     <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
         <ul class="navbar-nav">
-            <li class="nav-item">
+            <li>
                 <a class="nav-link" href="asubs.html">Active Subscriptions</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="donationhistory.html">Donation History</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pastcampaigns.html">Past Campaigns</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="pastcampaigns.html">Past Campaigns <span class="sr-only">Home</span></a>
             </li>
 			
 			<li class="nav-item">
@@ -83,80 +75,47 @@ function success() {
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-9">
-			<div class="row">
+<div class="row">
 				<div class="col-md-6">
-				<div class="modal fade" id="successmodal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
-                     </div>
-					
-                    <div class="modal-body">
-                       
-						<div class="thank-you-pop">
-							<h1>Thank You!</h1>
-							<p>Your donation has been accepted</p>							
- 						</div>
-                    </div>
-					
-                </div> </div> 
-            </div>
-					<div class="modal fade" id="modal-container-444208" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="myModalLabel">
-										Animal Rescue Campaign
-									</h5> 
-									<button type="button" class="close" data-dismiss="modal">
-										<span aria-hidden="true">×</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									<div class="custom-control custom-switch">
-										<input type="checkbox" class="custom-control-input" id="customSwitch1">
-										<label class="custom-control-label" for="customSwitch1">Setup Subscription</label>
-									</div>
-									<label for="usr">Amount in Euros:</label>
-									<input type="text" class="form-control" id="usr">
-								</div>
-								<div class="modal-footer">
-									 
-									<button type="button" onclick="success()" class="btn btn-success">
-										Donate
-									</button> 
-									<button type="button" class="btn btn-primary">
-										Share
-									</button> 
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">
-										Close
-									</button>
-								</div>
-							</div>
-							
+					<div class="card" align="center">
+						<h5 class="card-header">
+							Child Cancer Awareness Campaign
+						</h5>
+						<div class="card-body">
+						<p><strong>Description:</strong></p>
+						
+							<p class="card-text">
+								Thank you to everyone who participated in this campaign						
+							</p>
+						</div>
+						<div class="card-footer">
+							<button type="button" class="btn btn-primary">View Details</button>
+							<br><br>
+							<p>€15,000 total donations</p>
 						</div>
 					</div>
-					<center><h5>Active Campaigns</h2></center>
-					<div class="list-group">
-						<button type="button" href="#modal-container-444208" data-toggle="modal" class="list-group-item">Animal Rescue Campaign</button>
-						<button type="button" class="list-group-item">Fire Victims Support</button>
-						<button type="button" class="list-group-item">Aid To The Flood Affected</button>
-						<button type="button" class="list-group-item">Andreas Aid For Surgery</button>
-						<button type="button" class="list-group-item">Breast Cancer Awareness Month Campaign</button>
-					</div>
 				</div>
 				<div class="col-md-6">
-				<center><h5>Registered Charities</h2></center>
-					<div class="list-group">
-						<button type="button" class="list-group-item">Charity Example A</button>
-						<button type="button" class="list-group-item">Charity Example B</button>
-						<button type="button" class="list-group-item">Charity Example C</button>
-						<button type="button" class="list-group-item">Charity Example D</button>
-						<button type="button" class="list-group-item">Charity Example E</button>
+					<div class="card" align="center">
+						<h5 class="card-header">
+							Surgery Costs for Ioannis
+						</h5>
+						<div class="card-body">
+						<p><strong>Description:</strong></p>
+						
+							<p class="card-text">
+								Thank you to everyone who participated in this campaign						
+							</p>
+						</div>
+						<div class="card-footer">
+							<button type="button" class="btn btn-primary">View Details</button>
+							<br><br>
+							<div class="progress"><div class="progress-bar w-75"></div></div>
+							<p>€6000 out of €8000 goal donated</p>
+						</div>
 					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="col-md-3">
 			<center><img alt="Bootstrap Image Preview" src="images/avatar.png" height="110" class="rounded-circle" /></center>
