@@ -1,0 +1,194 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<!-- Navigation -->
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <img src="images/square_logo.png" height=100 alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accounts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Transactions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Transfers</a>
+        </li>
+		<li class="nav-item active">
+            <a class="nav-link" href="#">Donations
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<center><h1 class="mt-4">TBD Bank Donations</h1></center>
+<hr>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="d-flex w-50 order-0">
+        <a class="navbar-brand mr-1" href="donations.html">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li>
+                <a class="nav-link" href="asubs.html">Active Subscriptions</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="donationhistory.html">Donation History <span class="sr-only">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Past Campaigns</a>
+            </li>
+			
+			<li class="nav-item">
+                <a class="nav-link" href="#">My Causes</a>
+            </li>
+        </ul>
+    </div>
+    <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">A TBD Bank Product</span>
+</nav>
+<!-- Page Content -->
+<br>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-9">
+						<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>
+							ID
+						</th>
+						<th>
+							Name
+						</th>
+						<th>
+							Payment Date
+						</th>
+						<th>
+							Amount / Type
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="table-success">
+						<td>
+							1
+						</td>
+						<td>
+							Andreas Treatment Fund 
+						</td>
+						<td>
+							01/08/2019
+						</td>
+						<td>
+							€25 - One Off Payment
+						</td>
+					</tr>
+					<tr class="table-success">
+						<td>
+							2
+						</td>
+						<td>
+							Breast Cancer Institute
+						</td>
+						<td>
+							01/08/2019
+						</td>
+						<td>
+							€15 - Monthly Subscription
+						</td>
+					</tr>
+					<tr class="table-success">
+						<td>
+							3
+						</td>
+						<td>
+							Breast Cancer Institute
+						</td>
+						<td>
+							01/09/2019
+						</td>
+						<td>
+							€15 - Monthly Subscription
+						</td>
+					</tr>
+					<tr class="table-success">
+						<td>
+							4
+						</td>
+						<td>
+							Local Animal Shelter
+						</td>
+						<td>
+							01/09/2019
+						</td>
+						<td>
+							€10 - Monthly Subscription
+						</td>
+					</tr>
+					<tr class="table-success">
+						<td>
+							5
+						</td>
+						<td>
+							Breast Cancer Institute
+						</td>
+						<td>
+							01/10/2019
+						</td>
+						<td>
+							€15 - Monthly Subscription
+						</td>
+					</tr>
+					<tr class="table-success">
+						<td>
+							6
+						</td>
+						<td>
+							Local Animal Shelter
+						</td>
+						<td>
+							01/10/2019
+						</td>
+						<td>
+							€10 - Monthly Subscription
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-3">
+			<center><img alt="Bootstrap Image Preview" src="images/avatar.png" height="110" class="rounded-circle" /></center>
+			<br>
+			<div><center><h5>Total Donations: €100</h5>
+			<h5>Last Donation: 19/10/2019 (€15)</h5>
+			<h5>Active Subscriptions: 3</h5></center></div>
+		</div>
+	</div>
+</div>
+<!-- /.container -->
+</body>
+</html>
