@@ -85,6 +85,158 @@ function success() {
 		<div class="col-md-9">
 			<div class="row">
 				<div class="col-md-6">
+				<div class="modal fade" id="modalcampaign" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="myModalLabel">
+										Animal Rescue Campaign
+									</h5> 
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">×</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Create Campaign</legend>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="radios">Type of applicant:</label>
+  <div class="col-md-8"> 
+    <label class="radio-inline" for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      Charity
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Company
+    </label> 
+    <label class="radio-inline" for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="3">
+      Individual
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="causename">Name of cause: </label>  
+  <div class="col-md-8">
+  <input id="causename" name="causename" type="text" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">This will be the title to the campaign</span>  
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="textarea">Brief cause description:</label>
+  <div class="col-md-8">                     
+    <textarea class="form-control" id="textarea" name="textarea">Enter the cause details here (max 400 words)</textarea>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="radio_goal">Goal for campaign?</label>
+  <div class="col-md-8">
+  <div class="radio">
+    <label for="radio_goal-0">
+      <input type="radio" name="radio_goal" id="radio_goal-0" value="1" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radio_goal-1">
+      <input type="radio" name="radio_goal" id="radio_goal-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="goal_amount">Goal amount: </label>  
+  <div class="col-md-8">
+  <input id="goal_amount" name="goal_amount" type="text" placeholder="1000" class="form-control input-md">
+  <span class="help-block">Enter the amount you wish to set as a goal</span>  
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="radios_promo">Promotion as part of campaign?</label>
+  <div class="col-md-8">
+  <div class="radio">
+    <label for="radios_promo-0">
+      <input type="radio" name="radios_promo" id="radios_promo-0" value="1" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios_promo-1">
+      <input type="radio" name="radios_promo" id="radios_promo-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="campaign_promo">Promotion description:</label>
+  <div class="col-md-8">                     
+    <textarea class="form-control" id="campaign_promo" name="campaign_promo">Enter the details of your promotion.
+Example: Anyone who donates above 10 euros gets 10% discount at your store</textarea>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="radios">Funds recepient</label>
+  <div class="col-md-8"> 
+    <label class="radio-inline" for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      Registered Charity
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Special Fund Account
+    </label>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-8 control-label" for="file">Upload any relevant info</label>
+  <div class="col-md-8">
+    <input id="file" name="file" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-8 control-label" for="submit"></label>
+  <div class="col-md-8">
+    <button id="submit" name="submit" class="btn btn-primary">Submit for approval</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+								</div>
+								<div class="modal-footer">
+
+								</div>
+							</div>
+							
+						</div>
+					</div>
 				<div class="modal fade" id="successmodal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -164,7 +316,7 @@ function success() {
 			<div><center><h5>Total Donations: €100</h5>
 			<h5>Last Donation: 19/10/2019 (€15)</h5>
 			<h5>Active Subscriptions: 2</h5>
-			<button type="button" class="btn btn-success">Create Campaign</button></center></div>
+			<button type="button" class="btn btn-success" href="#modalcampaign" data-toggle="modal">Create Campaign</button></center></div>
 		</div>
 	</div>
 </div>
